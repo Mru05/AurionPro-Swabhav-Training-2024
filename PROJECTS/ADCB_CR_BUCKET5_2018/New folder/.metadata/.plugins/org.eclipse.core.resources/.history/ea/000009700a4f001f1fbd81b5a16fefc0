@@ -1,5 +1,0 @@
-package com.techlabs.creational.factorydesign.abstractfactory;
-
-public interface ICarFactory {
-
-}

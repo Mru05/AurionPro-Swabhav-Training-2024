@@ -1,7 +1,0 @@
-package com.techlabs.structural.facade.model;
-
-public interface DVD {
-	private String on;
-	
-
-}

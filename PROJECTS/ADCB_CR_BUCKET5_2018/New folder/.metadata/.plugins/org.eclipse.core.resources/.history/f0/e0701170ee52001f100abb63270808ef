@@ -1,7 +1,0 @@
-
-package com.techlabs.model;
-
-public class Student {
-	private double IStudentService;
-
-}

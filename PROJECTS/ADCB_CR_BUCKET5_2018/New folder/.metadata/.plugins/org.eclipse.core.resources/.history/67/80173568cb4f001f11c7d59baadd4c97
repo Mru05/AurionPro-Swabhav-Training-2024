@@ -1,6 +1,0 @@
-package com.techalbs.adapter.model;
-
-public class HatAdapter implements ITEM{
-	
-
-}

@@ -1,9 +1,0 @@
-package com.techlabs.creational.factorydesign.model;
-
-public interface IAccount {
-	
-	public void creditAmount();
-	public void debitAmount();
-	
-
-}

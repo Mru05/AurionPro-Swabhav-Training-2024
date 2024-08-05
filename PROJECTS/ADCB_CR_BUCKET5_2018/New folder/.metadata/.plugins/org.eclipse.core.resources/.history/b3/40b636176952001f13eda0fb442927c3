@@ -1,9 +1,0 @@
-package com.techlabs.structural.facade.model;
-
-public class MovieFacade {
-	
-	DVD dvd = new DVD("Hum Apke Hai KAun");
-	SoundSystem soundSystem = new SoundSystem("Sony");
-	Projector projector = new Projector();
-
-}
