@@ -1,0 +1,12 @@
+package com.techlabs.structural.facade.model;
+
+public class Projector implements Status {
+
+	@Override
+	public void getstatus() {
+		// TODO Auto-generated method stub
+		System.out.println("projector is on");
+		
+	}
+ 
+}

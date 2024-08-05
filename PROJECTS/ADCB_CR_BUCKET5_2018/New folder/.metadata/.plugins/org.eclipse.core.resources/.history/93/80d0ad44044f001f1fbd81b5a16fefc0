@@ -1,0 +1,22 @@
+package com.techlabs.creational.factorydesign.model;
+
+public class CurrentAccount implements IAccount {
+	int amount;
+
+	@Override
+	public void creditAmount() {
+		// TODO Auto-generated method stub
+		int creditAmount =  creditAmount - amount; 
+		
+		
+		
+		
+	}
+
+	@Override
+	public void debitAmount() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

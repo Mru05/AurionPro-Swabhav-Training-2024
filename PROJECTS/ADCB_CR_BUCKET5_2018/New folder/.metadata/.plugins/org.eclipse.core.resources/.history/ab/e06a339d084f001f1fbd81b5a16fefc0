@@ -1,0 +1,30 @@
+package com.techlabs.creational.factorydesign.abstractfactory;
+
+import com.techlabs.creational.factorydesign.model.Mahindra;
+import com.techlabs.creational.factorydesign.model.Maruti;
+import com.techlabs.creational.factorydesign.model.Tata;
+
+public class ICarFactory {
+	
+	public static ICarFactory makeCar(String carName) {
+		ICarFactory car = null;
+		
+		Maruti car0 = null;
+		if(carName == "Maruti")
+			car0= new Maruti();
+		Mahindra car1=null;
+		if(carName == "Mahindra")
+			car1= new Mahindra();
+		Tata car2=null;
+		if(carName == "Tata")
+			car2= new Tata();
+		
+	
+		return car;
+		
+	
+		
+		
+
+}
+}

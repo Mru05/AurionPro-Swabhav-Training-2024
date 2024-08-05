@@ -1,0 +1,8 @@
+package com.techlabs.structural.facade.model;
+
+public class DVD {
+	String on;
+	
+	
+
+}

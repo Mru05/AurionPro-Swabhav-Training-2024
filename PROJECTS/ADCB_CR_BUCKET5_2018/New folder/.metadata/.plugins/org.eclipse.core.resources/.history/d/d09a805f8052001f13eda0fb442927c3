@@ -1,0 +1,15 @@
+package com.techlabs.model;
+
+public class Players {
+	
+	private char symbol;
+
+    public Players(char symbol) {
+        this.symbol = symbol;
+    }
+
+    public char getSymbol() {
+        return symbol;
+    }
+
+}

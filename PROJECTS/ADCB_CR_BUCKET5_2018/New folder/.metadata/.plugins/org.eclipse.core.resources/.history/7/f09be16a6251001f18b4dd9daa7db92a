@@ -1,0 +1,18 @@
+package com.techlabs.model;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class OperationsTest {
+
+	@Test
+	void testAddition() {
+		Operations operation = new Operations();
+		
+		
+		
+		assertEquals(10,operation.addition(2, 4),"This function must do addition"  );
+	}
+
+}

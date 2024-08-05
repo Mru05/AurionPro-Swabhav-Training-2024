@@ -1,0 +1,5 @@
+package com.techlabs.creational.singleton.test;
+
+public class LoginTest {
+
+}

@@ -1,0 +1,10 @@
+package com.techlabs.command.model;
+
+public class TextFileOperationExecutor {
+
+	public void executeOperation(OpenTextFileOperation openTextFileOperation) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

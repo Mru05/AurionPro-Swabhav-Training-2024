@@ -1,0 +1,15 @@
+package com.techlabs.prototypeDesignPattern.test;
+
+import com.techlabs.prototypeDesignPattern.BookShop;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		BookShop bs = new BookShop();
+		bs.setName("Novelty");
+		bs.loadData();
+		System.out.println(bs);
+
+	}
+
+}

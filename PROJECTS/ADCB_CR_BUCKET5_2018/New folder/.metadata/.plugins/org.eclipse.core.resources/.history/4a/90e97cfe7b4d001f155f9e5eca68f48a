@@ -1,0 +1,5 @@
+package com.techlabs.Voilation.model;
+
+public class TaxCalculator {
+
+}

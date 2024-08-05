@@ -1,0 +1,71 @@
+package com.techlabs.behvioural.observer.test;
+
+import java.util.Scanner;
+
+import com.techlabs.behvioural.observer.model.Account;
+import com.techlabs.behvioural.observer.model.EmailNotifier;
+import com.techlabs.behvioural.observer.model.InsufficientFundSException;
+import com.techlabs.behvioural.observer.model.SMSNotifier;
+import com.techlabs.behvioural.observer.model.WhatsappNotifier;
+
+public class AccountNotifierTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Welcome to out Banking Service");
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Please Enter your account number:");
+        long accountNumber = scanner.nextLong();
+        System.out.println("Enter the name of account holder");
+        String name = scanner.nextLine();
+        System.out.println("Enter initial balance to be credited:");
+        double balance = scanner.nextDouble();
+        
+        Account account = new Account(accountNumber, name, balance);
+        
+        System.out.println("From Below please select the means of notification you want");
+        System.out.println("1. SMS");
+        System.out.println("2.Email");
+        System.out.println("3. Whatsapp");
+        
+        String[] choices = scanner.nextLine().split(",");
+
+        for (String choice : choices) {
+            switch (choice.trim()) {
+    	   
+    	   case "1":
+    		   account.registerNotifier(new SMSNotifier());
+    		   break;
+    	   case "2":
+    		   account.registerNotifier(new EmailNotifier());
+    		   break;
+    	   case "3":
+    		   account.registerNotifier(new WhatsappNotifier());
+    		   break;
+    		default:
+    		   System.out.println("Invalid choice. Please select 1, 2, or 3.");
+    		   
+    	   }
+            System.out.println("Depositing 500.0");
+            account.deposit(500.0);
+
+            System.out.println("Withdrawing 200.0");
+            try {
+                account.withdraw(200.0);
+            } catch (InsufficientFundSException e) {
+                System.out.println(e.getMessage());
+            }
+
+            System.out.println("Withdrawing 1000.0");
+            try {
+                account.withdraw(1000.0);
+            } catch (InsufficientFundSException e) {
+                System.out.println(e.getMessage());
+            }
+        
+
+	}
+	}
+}
+

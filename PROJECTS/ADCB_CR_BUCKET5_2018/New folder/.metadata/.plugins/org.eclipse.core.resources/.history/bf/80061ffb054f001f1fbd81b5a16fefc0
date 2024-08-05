@@ -1,0 +1,20 @@
+package com.techlabs.creational.factorydesign.test;
+
+import com.techlabs.creational.factorydesign.model.AccountFactory;
+import com.techlabs.creational.factorydesign.model.IAccount;
+
+public class IAccountTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		IAccount account;
+		account = AccountFactory.makeAccount("SavingAccount");
+		account.creditAmount();
+		account.debitAmount();
+		account = AccountFactory.makeAccount("CurrentAccount");
+		account.creditAmount();
+		account.debitAmount();
+
+	}
+
+}

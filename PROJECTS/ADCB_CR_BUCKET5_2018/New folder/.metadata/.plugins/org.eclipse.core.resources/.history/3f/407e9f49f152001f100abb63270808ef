@@ -1,0 +1,34 @@
+package com.techlabs.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import com.techlabs.model.IStudentService;
+import com.techlabs.model.Student;
+
+class StudentTest {
+ private IStudentService studentservice;
+ private Student student;
+ 
+ 
+ @BeforeEach
+ void init() {
+	 studentservice = Mockito.mock(IStudentService.class);
+	 student= new Student(studentservice);
+ }
+ 
+ 
+	@Test	
+	void testCalculatePercentage() {
+		when(studentservice.getmarks()).thenReturn(450);  // Mocking the service to return 450 marks.
+   
+        double percentage = student.calculatePercentage();
+        
+       
+        assertEquals(90.0, percentage, 0.01);	
+		
+	}
+
+}

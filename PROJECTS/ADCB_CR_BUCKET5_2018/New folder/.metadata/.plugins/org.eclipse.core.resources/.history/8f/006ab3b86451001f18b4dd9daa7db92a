@@ -1,0 +1,9 @@
+package com.techlabs.model;
+
+public class AreaCalculatorTest {
+	
+	void testCalculatorAreaOfCircle(){
+		fail("Unimplemented");
+	}
+
+}

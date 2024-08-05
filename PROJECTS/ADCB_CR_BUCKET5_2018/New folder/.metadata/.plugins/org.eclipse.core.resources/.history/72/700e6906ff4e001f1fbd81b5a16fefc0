@@ -1,0 +1,8 @@
+package com.techlabs.creational.factorydesign.test;
+
+public class ICarTest {
+	public static void main(String[] args) {
+		
+	}
+
+}

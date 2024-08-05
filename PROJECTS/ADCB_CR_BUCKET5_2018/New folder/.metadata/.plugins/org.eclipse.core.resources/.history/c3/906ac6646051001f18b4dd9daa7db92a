@@ -1,0 +1,22 @@
+package com.techlabs.model;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
+class OperationsTest {
+
+    @Test
+    void testAddition() {
+        // Create an instance of Operations
+        Operations operation = new Operations();
+        
+        // Call the addition method and store the result in 'actual'
+        int actual = operation.addition(5, 5);
+        
+        // Define the expected value
+        int expected = 10;
+        
+        // Use assertEquals to check if the actual result matches the expected value
+        assertEquals(expected, actual);
+    }
+}

@@ -1,0 +1,24 @@
+package com.techlabs.structural.facade.model;
+
+public class SoundSystem {
+	
+	private String voulume;
+	
+	public SoundSystem( String voulume) {
+		super();
+		
+		this.voulume = voulume;
+	}
+	@Override
+	public String toString() {
+		return "SoundSystem [voulume=" + voulume + "]";
+	}
+	
+	public String getVoulume() {
+		return voulume;
+	}
+	public void setVoulume(String voulume) {
+		this.voulume = voulume;
+	}
+
+}

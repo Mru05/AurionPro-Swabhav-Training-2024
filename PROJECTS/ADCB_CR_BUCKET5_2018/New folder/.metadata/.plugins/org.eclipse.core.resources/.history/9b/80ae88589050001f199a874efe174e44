@@ -1,0 +1,16 @@
+package com.techlabs.behvioural.observer.model;
+
+public class InsufficientFundSException extends Exception{
+	private double amount;
+
+	public InsufficientFundSException(double amount) {
+		super();
+		this.amount = amount;
+	}
+
+	public String getMessage() {
+		return "Insufficient Funds Cannot perform any operations";
+	}
+	
+
+}

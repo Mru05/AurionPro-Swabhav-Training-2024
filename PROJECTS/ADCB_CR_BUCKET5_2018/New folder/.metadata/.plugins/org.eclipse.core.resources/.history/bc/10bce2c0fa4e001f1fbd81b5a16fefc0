@@ -1,0 +1,11 @@
+package com.techlabs.creational.singleton.model;
+
+public class Login {
+	private Login() {
+		System.out.println("Login created");
+	}
+	public void status() {
+		System.out.println("Login Successful");
+	}
+
+}

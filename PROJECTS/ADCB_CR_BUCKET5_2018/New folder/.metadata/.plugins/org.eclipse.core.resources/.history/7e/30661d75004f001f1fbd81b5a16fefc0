@@ -1,0 +1,20 @@
+package com.techlabs.creational.factorydesign.test;
+
+import com.techlabs.creational.factorydesign.model.Mahindra;
+import com.techlabs.creational.factorydesign.model.Maruti;
+import com.techlabs.creational.factorydesign.model.Tata;
+
+public class ICarTest {
+	public static void main(String[] args) {
+		Maruti maruti = new Maruti();
+		maruti.start();
+		maruti.stop();
+		Tata tata = new Tata();
+		tata.start();
+		tata.stop();
+		Mahindra mahindra = new Mahindra();
+		mahindra.start();
+		mahindra.stop();
+	}
+
+}

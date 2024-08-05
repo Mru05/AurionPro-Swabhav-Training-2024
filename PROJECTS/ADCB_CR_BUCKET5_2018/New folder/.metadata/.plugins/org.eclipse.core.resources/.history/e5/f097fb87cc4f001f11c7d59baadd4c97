@@ -1,0 +1,26 @@
+package com.techalbs.adapter.test;
+
+import java.util.List;
+
+public class ShoppingCart {
+	public static void main(String[] args) {
+		 private List<Item> cartItems;
+
+		    public ShoppingCart() {
+		        cartItems = new ArrayList<>();
+		    }
+
+		    public void addToCart(Item item) {
+		        cartItems.add(item);
+		    }
+
+		    public double getCartPrice() {
+		        double total = 0.0;
+		        for (Item item : cartItems) {
+		            total += item.getItemPrice();
+		        }
+		        return total;
+		    }
+	}
+
+}

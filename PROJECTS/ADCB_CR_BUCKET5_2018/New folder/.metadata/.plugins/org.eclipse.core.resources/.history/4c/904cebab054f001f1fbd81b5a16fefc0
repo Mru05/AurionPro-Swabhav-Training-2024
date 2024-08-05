@@ -1,0 +1,22 @@
+package com.techlabs.creational.factorydesign.model;
+
+public class SavingAccount implements IAccount{
+	private double balance;
+	@Override
+	public double creditAmount(double amount) {
+		// TODO Auto-generated method stub
+		balance += amount;
+        System.out.println("Credited " + amount + " to Savings account. New balance: " + balance);
+		return balance;
+		
+	}
+
+	@Override
+	public double debitAmount(double amount) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+}

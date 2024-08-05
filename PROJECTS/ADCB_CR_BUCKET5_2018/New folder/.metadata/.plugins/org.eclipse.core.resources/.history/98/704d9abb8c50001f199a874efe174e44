@@ -1,0 +1,10 @@
+package com.techlabs.behvioural.observer.model;
+
+public class Account {
+	
+	private long accountNumber;
+	private String name;
+	private double balance;
+	
+
+}

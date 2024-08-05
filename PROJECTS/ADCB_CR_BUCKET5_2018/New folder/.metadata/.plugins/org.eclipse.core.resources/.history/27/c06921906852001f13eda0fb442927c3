@@ -1,0 +1,30 @@
+package com.techlabs.structural.facade.model;
+
+public class SoundSystem implements Status{
+	
+	private String voulume;
+	
+	public SoundSystem( String voulume) {
+		super();
+		
+		this.voulume = voulume;
+	}
+	@Override
+	public String toString() {
+		return "SoundSystem [voulume=" + voulume + "]";
+	}
+	
+	public String getVoulume() {
+		return voulume;
+	}
+	public void setVoulume(String voulume) {
+		this.voulume = voulume;
+	}
+	@Override
+	public void getstatus() {
+		// TODO Auto-generated method stub
+		System.out.println("SoundSystem is on");
+		
+	}
+
+}

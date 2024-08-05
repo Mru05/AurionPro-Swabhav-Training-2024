@@ -1,0 +1,11 @@
+package com.techlabs.builderPattern.test;
+
+import com.techlabs.builderPattern.Phone;
+
+public class Shop {
+     public static void main(String[] args) {
+    	 Phone p = new Phone("Android", 128, "QualCom", 6.1, 3200);
+    	 System.out.println(p);
+	}
+      
+}

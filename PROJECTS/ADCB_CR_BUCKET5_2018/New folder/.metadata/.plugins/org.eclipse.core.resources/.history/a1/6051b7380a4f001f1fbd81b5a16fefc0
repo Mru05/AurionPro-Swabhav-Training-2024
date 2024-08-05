@@ -1,0 +1,12 @@
+package com.techlabs.creational.factorydesign.model;
+
+import com.techlabs.creational.factorydesign.abstractfactory.ICarFactory;
+
+public class MarutiFactory implements ICarFactory{
+
+	  public ICar createCar() {
+	        return new Maruti();
+	    }
+	
+
+}

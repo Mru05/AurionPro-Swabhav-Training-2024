@@ -1,0 +1,5 @@
+package com.techlabs.behvioural.stateDesign.model;
+
+public interface IPacket {
+
+}
